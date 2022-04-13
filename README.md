@@ -1,4 +1,4 @@
-# ALDEA Multisig
+# ALDEA Tesoro
 
 [![Node.js CI](https://github.com/ADAOcommunity/round-table/actions/workflows/node.js.yml/badge.svg)](https://github.com/ADAOcommunity/round-table/actions/workflows/node.js.yml)
 [![Cypress Tests](https://github.com/ADAOcommunity/round-table/actions/workflows/cypress.yml/badge.svg)](https://github.com/ADAOcommunity/round-table/actions/workflows/cypress.yml)
@@ -7,7 +7,7 @@ Este es un proyecto [Next.js](https://nextjs.org/) generado con [`create-next-ap
 
 ## Objetivo
 
-ALDEA Multisig es un fork del proyecto [round-table](https://github.com/ADAOcommunity/round-table) de [ADAO](https://github.com/ADAOcommunity).
+ALDEA Tesoro es un fork del proyecto [round-table](https://github.com/ADAOcommunity/round-table) de [ADAO](https://github.com/ADAOcommunity).
 
 El objetivo de esta herramienta es explorar el potencial que [Cardano](https://cardano.org/) nos ofrece para:
 
@@ -16,6 +16,8 @@ El objetivo de esta herramienta es explorar el potencial que [Cardano](https://c
 - Tener opciones para delegación y multi-delegación.
 
 - Realizar votaciones on-chain
+
+- Y mucho más
 
 ## Para empezar
 
