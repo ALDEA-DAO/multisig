@@ -36,11 +36,13 @@ const Configure: NextPage = () => {
         </div>}
         <div className='font-semibold'>User Data Export/Import</div>
         <p>User data has to be on the same network. For example, data exported from testnet cannot be imported to mainnet.</p>
-        <p>Save my treasuries</p>
+        <br />
+        <h1 className='text-lg font-semibold'>Exportar</h1>
         <div className='flex'>
           <ExportUserDataButton />
         </div>
-        <p>Load my treasuries</p>
+        <br />
+        <h1 className='text-lg font-semibold'>Importar</h1>
         <div className='flex'>
           <ImportUserData />
         </div>

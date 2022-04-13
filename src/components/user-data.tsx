@@ -66,7 +66,7 @@ const ExportUserDataButton: NextPage = () => {
       mime='application/json;charset=utf-8'
       filename={filename}
       data={userDataJSON}>
-      Export User Data
+      Guardar Tesoros
     </DownloadDataButton>
   )
 }
@@ -140,7 +140,7 @@ const ImportUserData: NextPage = () => {
         className='p-2 bg-sky-700 text-white disabled:text-gray-400 disabled:bg-gray-100'
         onClick={clickHandle}
         disabled={!isValid()}>
-        Import User Data
+        Importar Tesoros
       </button>
     </div>
   )

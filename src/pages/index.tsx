@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Link from 'next/link'
 import { Layout, Panel } from '../components/layout'
 import { WalletInfo } from '../components/transaction'
+import { ExportUserDataButton, ImportUserData } from '../components/user-data'
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +19,17 @@ const Home: NextPage = () => {
             <WalletInfo className='flex border rounded p-2 space-x-2 items-center w-48 shadow' name='gero' src='https://gerowallet.io/assets/img/logo2.ico'>Gero Wallet</WalletInfo>
           </ul>
           <br />
+        <h1 className='text-lg font-semibold'>Exportar</h1>
+        <div className='flex'>
+          <ExportUserDataButton />
+        </div>
+        <br />
+        <h1 className='text-lg font-semibold'>Importar</h1>
+        <div className='flex'>
+          <ImportUserData />
+        </div>
+        <br />
+        <h1 className='text-lg font-semibold'>Cuéntanos qué te parece</h1>
           <p>ALDEA tiene una comunidad excepcional. Si tienes preguntas o problemas, acércate a nosotros a través de <a className='text-sky-700' target='_blank' rel='noreferrer' href='https://discord.aldea-dao.org'>Discord</a> o <a className='text-sky-700' target='_blank' rel='noreferrer' href='https://fogon.aldea-dao.org'>Telegram</a>.</p>
         </Panel>
       </div>
