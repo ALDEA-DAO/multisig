@@ -3,11 +3,23 @@
 [![Node.js CI](https://github.com/ADAOcommunity/round-table/actions/workflows/node.js.yml/badge.svg)](https://github.com/ADAOcommunity/round-table/actions/workflows/node.js.yml)
 [![Cypress Tests](https://github.com/ADAOcommunity/round-table/actions/workflows/cypress.yml/badge.svg)](https://github.com/ADAOcommunity/round-table/actions/workflows/cypress.yml)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Este es un proyecto [Next.js](https://nextjs.org/) generado con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Objetivo
 
-First, run the development server:
+ALDEA Multisig es un fork del proyecto [round-table](https://github.com/ADAOcommunity/round-table) de [ADAO](https://github.com/ADAOcommunity).
+
+El objetivo de esta herramienta es explorar el potencial que [Cardano](https://cardano.org/) nos ofrece para:
+
+- Administrar un Tesoro (o conjunto de direcciones, que requieran de varias llaves privadas para poder firmar transacciones).
+
+- Tener opciones para delegación y multi-delegación.
+
+- Realizar votaciones on-chain
+
+## Para empezar
+
+Primero, ejecuta el server de desarrollo:
 
 ```bash
 npm run dev
@@ -15,7 +27,7 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) con tu navegador para ver los resultados.
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
@@ -23,7 +35,7 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Environment Variable
+## Variables de Entorno
 
 * To use it on Cardano Testnet, set `NEXT_PUBLIC_TESTNET=y`. Leave it unset to use the Mainnet.
 * To connect it to a GraphQL node, set `NEXT_PUBLIC_GRAPHQL` to the URI of the node.
@@ -34,15 +46,6 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 * To run Unit Tests, use `yarn test` command.
 * To run UI/UX Tests, use `yarn cypress` command. Make sure your dev server `http://localhost:3000/` is on. Or use `yarn cypress:headless` to run it in headless mode.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 

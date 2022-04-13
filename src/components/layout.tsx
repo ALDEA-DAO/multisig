@@ -127,7 +127,7 @@ const PrimaryBar: NextPage = () => {
         className='p-4 hover:bg-sky-700'>
         <CogIcon className='w-12' />
       </NavLink>
-      <a className='p-4 hover:bg-sky-700' target='_blank' rel='noreferrer' href='https://discord.gg/SDnm4GzY'>
+      <a className='p-4 hover:bg-sky-700' target='_blank' rel='noreferrer' href='https://discord.aldea-dao.org'>
         <div style={{ height: '48px' }}>
           <Image src='/Discord-Logo-White.svg' width={48} height={48} alt='Discord Server'></Image>
         </div>
@@ -167,7 +167,7 @@ const SecondaryBar: NextPage = () => {
           onPageClassName='bg-sky-700'
           className='flex w-full p-4 items-center space-x-1 justify-center hover:bg-sky-700'>
           <PlusIcon className='w-4' />
-          <span>New Treasury</span>
+          <span>Tesoro</span>
         </NavLink>
       </div>
       {treasuries && treasuries.map((treasury, index) => <TreasuryListing key={index} treasury={treasury} />)}

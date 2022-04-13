@@ -41,7 +41,7 @@ const AddAddress: NextPage<{
 
   return (
     <label className='block space-y-1'>
-      <div>New Signer (min. 2)</div>
+      <div>Firmantes (mínimo 2)</div>
       <div className='flex space-x-2 items-start'>
         <textarea
           className={['block w-full border p-2 rounded', isValid ? '' : 'text-red-500'].join(' ')}
@@ -49,14 +49,14 @@ const AddAddress: NextPage<{
           onKeyDown={enterPressHandle}
           rows={1}
           value={address}
-          placeholder="Add signer address and press enter">
+          placeholder="Copia aquí la dirección del firmante y presiona 'Agregar'">
         </textarea>
         <button
           disabled={!isValid}
           onClick={submit}
           className='flex p-2 items-center space-x-1 border rounded text-sky-700 disabled:text-gray-400'>
           <PlusIcon className='h-4' />
-          <span>Add</span>
+          <span>Agregar</span>
         </button>
       </div>
     </label>
@@ -185,24 +185,26 @@ const NewTreasury: NextPage = () => {
     <Layout>
       <div className='space-y-2'>
         <Hero>
-          <h1 className='font-semibold text-lg'>New Treasury</h1>
-          <p>Start to create a treasury protected by Multi-Sig native scripts from here. A treasury needs more than one address. Only receiving address should be used.</p>
+          <h1 className='font-semibold text-lg'>Crear Tesoro Multisig</h1>
+          <p>El Tesoro quedará protegido a través de un script.</p>
+          <p>Un Tesoro necesita más de una dirección (addr1).</p>
+          <p>Por favor, utilizar únicamente direcciones de recepción y que no pertenezcan a un Exchange.</p>
         </Hero>
         <Panel>
           <div className='p-4 space-y-4'>
             <label className='block space-y-1'>
-              <div className="after:content-['*'] after:text-red-500">Name</div>
+              <div className="after:content-['*'] after:text-red-500">Nombre del Tesoro</div>
               <input
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className='p-2 block border w-full rounded'
-                placeholder='Write Name' />
+                placeholder='Escribe un nombre' />
             </label>
             <label className='block space-y-1'>
-              <div>Description</div>
+              <div>Descripción</div>
               <textarea
                 className='p-2 block border w-full rounded'
-                placeholder='Describe the treasury'
+                placeholder='Describe este Tesoro'
                 rows={4}
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}>
@@ -241,7 +243,7 @@ const NewTreasury: NextPage = () => {
               name={name}
               description={description}
               script={getScript()}>
-              Save Treasury
+              Crear Tesoro
             </SaveTreasuryButton>
           </footer>
         </Panel>
