@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <NotificationContext.Provider value={notification}>
         <ApolloProvider client={apolloClient}>
           <Head>
-            <title>{config.isMainnet ? 'RoundTable' : 'RoundTable Testnet'}</title>
+            <title>{config.isMainnet ? 'ALDEA Tesoro' : 'ALDEA Tesoro - Testnet'}</title>
           </Head>
           <Component {...pageProps} />
         </ApolloProvider>

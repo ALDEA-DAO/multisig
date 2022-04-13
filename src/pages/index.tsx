@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <Layout>
       <div className='space-y-2'>
         <Panel className='p-4 space-y-2'>
-          <h1 className='text-lg font-semibold'>ALDEA Multisig</h1>
+          <h1 className='text-lg font-semibold'>ALDEA Tesoro</h1>
           <p>Soportamos, por el momento, las wallets Nami, Eternl/cc, Gero y Flint para firmar transacciones. Estamos trabajando para incluir Game Changer.</p>
           <br />
           <p>Comienza a administrar un Tesoro en Cardano con tus amigos y familiares hoy mismo.</p>
